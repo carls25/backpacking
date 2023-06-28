@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Backpacking</title>
+    <style>
+      
+      h1 {font-size: 40px;
+        font-weight: 200px;
+        color: #0b8768;
+        text-align: center;
+         margin: 0;
+         padding: 0 0 24px;}
+      h2 {
+        font-weight: 100px;
+        font-size: 34px;
+        line-height: 28px;
+        margin: 0;  
+        text-align: center;
+        color: #61564e;
+        padding: 0 0 24px;
+      }
+      .type {
+color: rgb(116, 233, 53);
+font-weight: bolder;
+text-align: center
+        padding: 10 10 30px; 
+        font-size: 30px;
+        
+}
+.define {margin-left: 120px;
+        margin-right: 120px;
+        padding: 10px 30px 30px 5px; 
+        font-size: 20px;
+        text-align: center;
+    background:linear-gradient(#64dbe6, #24a316);
+
+}
+      
+      .things {
+        padding: 5px 5px 5px 5px; 
+        font-size: 20px;
+        text-align: center;
+    line-height: 36px;}
+    
+
+
+p{text-align: center;
+margin-left: 120px;
+margin-right: 120px;
+line-height: 40px;}
+
+
+
+    img {width: 30%;
+    display: block;
+margin: 25px auto;
+border-radius: 30px;
+border: 5px solid rgb(255, 0, 162);}
+      button {
+        border-radius: 30px;
+        margin: 0 auto;
+        display: block;
+        background-color: #ffffff;
+        border: 1px solid #18950a;
+        color: #18950a;
+        font-size: 16px;
+        line-height: 22px;
+        padding: 16px 24px;
+        text-decoration: none;
+        transition: all 200ms ease;
+        box-shadow: 5px 5px;
+      }
+      button:hover {
+        color: #fff;
+        background: #070000;
+      }
+    </style>
+  </head>
+
+  <body>
+ 
+      <h1>Backpacking in the Backcountry</h1>
+      <h2>Let's Chat about the Great Outdoors!</h2>
+      <p>
+      <span class="type">Backcountry backpacking is considered a <a href="https://www.rei.com/blog/climb/fun-scale" target="_blank">type 2 fun.</a></span> 
+        <div class="define">
+             Backpacking is an adventure that blends hiking with backcountry camping.
+        It lets you broaden your horizons beyond the car campground to enjoy a <strong> richer, more immersive outdoor experience.</strong>
+        A key distinction from day hiking is the size of your pack—your backpack (and you) must carry all
+        of life’s essentials on your back. And you <em>must choose</em> those essentials
+        with care.
+        </div>
+        </p>
+       <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/080/145/original/backpack.png?1683063605" alt="Women Backpacking">
+    
+     
+
+    <hr>
+<div class="things">
+       <p> 
+Backpacking requires a few things to be successful. For example you might want to rent or buy a tent, sleeping bag, sleeping pad, backpacking backpack, trekking poles, a water filtration system. Additionally you will want to bring dehyrated food, snacks, a map, and a compass. <u>Additionally, it is always best practice to inform friends and family of your trip and when to expect you home so that they can be prepared in the event you do not return.</u> 
+
+
+       </p>
+        
+        
+   </div>
+      <br />
+      <button>Learn More</button>
+
+    <script> 
+    function hike() {
+        
+        let enjoy = prompt("Do you like to hike?");
+        let name = prompt("What is Your Name?");
+        let trail =prompt("Where is your favorite place to hike?");
+       if (enjoy === "yes" || enjoy === "Yes") {
+        alert("Wonderful,"+ " " +name+ "!"+" "+ "We can't wait to hear about your hikes at" + " " + trail+"😍")
+       }
+       else {
+        alert("Well then," + " "+ name +" "+ "you may be lost🙄")}
+
+
+    }
+    let learnMore = document.querySelector("button");
+     learnMore.addEventListener("click", hike);
+    </script>
+  </body>
+</html>
